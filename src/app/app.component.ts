@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angularPipes';
+  liste: {name: string, job: string}[] = [
+    {name: "berk", job: "lawyer"},
+    {name: "ahmet", job: "lawyer"},
+    {name: "yilmaz", job: "engineer"},
+    {name: "sevket", job: "doctor"}
+  ]
+  filterWord: string;
+
 }
